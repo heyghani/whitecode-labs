@@ -8,7 +8,6 @@ import { InternetOfThings } from './InternetOfThings'
 import { CTA } from './CTA'
 import Automation from './Automation'
 import IntegrationAsAService from './IntegrationAsAService'
-import DataOps from './DataOps'
 
 const sections = [
   { id: 'home', Component: Banner },
