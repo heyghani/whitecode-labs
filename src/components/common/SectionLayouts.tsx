@@ -50,7 +50,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
 }) => (
   <div
     className={twMerge(
-      'font-lato text-center text-[23px] font-bold leading-[34px]  tracking-[-0.03rem] text-[#313131]',
+      'font-lato text-center text-[22px] font-bold leading-[34px]  tracking-[-0.03rem] text-[#313131]',
       className
     )}
   >

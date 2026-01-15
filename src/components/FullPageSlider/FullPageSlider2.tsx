@@ -6,7 +6,7 @@ import {
   HashNavigation,
 } from 'swiper/modules'
 import { SwiperSlide } from 'swiper/react'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 interface Props {
   sections: {
@@ -22,21 +22,29 @@ const NavigationHandler: React.FC<{ sections: Props['sections'] }> = ({
 }) => {
   const swiper = useSwiper()
 
+  // Handle hash navigation on initial load
   useEffect(() => {
-    const handleHashChange = () => {
-      if (window.location.hash) {
-        const hash = window.location.hash.replace('#', '')
+    const handleNavigation = () => {
+      const hash = window.location.hash.replace('#', '')
+      if (hash) {
         const index = sections.findIndex((s) => s.id === hash)
-        if (index !== -1 && swiper.activeIndex !== index) {
-          swiper.slideTo(index)
+        if (index !== -1) {
+          // Use setTimeout to ensure swiper is ready
+          setTimeout(() => {
+            swiper.slideTo(index, 0) // 0 speed for instant slide
+          }, 100)
         }
       }
     }
 
-    window.addEventListener('hashchange', handleHashChange)
+    // Handle initial load
+    handleNavigation()
+
+    // Handle hash changes (external navigation)
+    window.addEventListener('hashchange', handleNavigation)
 
     return () => {
-      window.removeEventListener('hashchange', handleHashChange)
+      window.removeEventListener('hashchange', handleNavigation)
     }
   }, [swiper, sections])
 
@@ -46,6 +54,7 @@ const NavigationHandler: React.FC<{ sections: Props['sections'] }> = ({
 export const FullPageSlider: React.FC<Props> = ({ sections }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const [allowSwip, setAllowSwip] = useState(true)
+  const swiperRef = useRef<any>(null)
 
   useEffect(() => {
     window.scrollTo({
@@ -58,10 +67,46 @@ export const FullPageSlider: React.FC<Props> = ({ sections }) => {
     }
   }, [])
 
+  // Handle same-page hash navigation
+  useEffect(() => {
+    const handleSamePage = (e: MouseEvent) => {
+      const target = e.target as HTMLElement
+      const link = target.closest('a[href]')
+
+      if (link) {
+        const href = link.getAttribute('href')
+        const currentPath = window.location.pathname
+        const linkPath = new URL(href || '', window.location.origin).pathname
+        const linkHash = new URL(
+          href || '',
+          window.location.origin
+        ).hash.replace('#', '')
+
+        // If clicking a link on same page with hash, navigate immediately
+        if (linkPath === currentPath && linkHash) {
+          e.preventDefault()
+          window.location.hash = linkHash
+
+          // Manually trigger swiper slide change if swiper exists
+          if (swiperRef.current?.swiper) {
+            const index = sections.findIndex((s) => s.id === linkHash)
+            if (index !== -1) {
+              swiperRef.current.swiper.slideTo(index, 0)
+            }
+          }
+        }
+      }
+    }
+
+    document.addEventListener('click', handleSamePage)
+    return () => document.removeEventListener('click', handleSamePage)
+  }, [sections])
+
   return (
     <>
       <div className='hidden lg:block'>
         <Swiper
+          ref={swiperRef}
           slidesPerView={1}
           pagination={{ clickable: true }}
           mousewheel={true}
@@ -69,9 +114,6 @@ export const FullPageSlider: React.FC<Props> = ({ sections }) => {
           modules={[Pagination, Mousewheel, Keyboard, HashNavigation]}
           className='h-[100dvh]'
           direction='vertical'
-          hashNavigation={{
-            watchState: true,
-          }}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           speed={800}
           freeMode={false}
