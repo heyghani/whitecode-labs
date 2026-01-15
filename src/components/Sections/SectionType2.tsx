@@ -1,4 +1,5 @@
 import { twMerge } from 'tailwind-merge'
+import { Link } from '@tanstack/react-router'
 import {
   Button,
   SectionHeader,
@@ -42,13 +43,13 @@ export const SectionType2 = ({
             {text}
             {btnLink ? (
               <div className='mt-4 flex w-full justify-center md:justify-start'>
-                <a href={btnLink} target='_self'>
+                <Link to={btnLink}>
                   <Button
                     varient={'outline'}
                     text='Learn More'
                     className={'md:px-auto px-6'}
                   />
-                </a>
+                </Link>
               </div>
             ) : null}
           </div>
