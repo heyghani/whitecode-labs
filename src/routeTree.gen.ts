@@ -15,6 +15,9 @@ import { Route as InternetOfThingRouteImport } from './routes/internet-of-thing'
 import { Route as IntegrationAsAServiceRouteImport } from './routes/integration-as-a-service'
 import { Route as AutomationRouteImport } from './routes/automation'
 
+const VelocityAnalyticsLazyRouteImport = createFileRoute(
+  '/velocity-analytics',
+)()
 const TermsLazyRouteImport = createFileRoute('/terms')()
 const TechnologyAndHighGrowthCompaniesLazyRouteImport = createFileRoute(
   '/technology-and-high-growth-companies',
@@ -35,13 +38,23 @@ const HybridCloudLazyRouteImport = createFileRoute('/hybrid-cloud')()
 const FinancialServicesAndFintechLazyRouteImport = createFileRoute(
   '/financial-services-and-fintech',
 )()
+const DevOpsLazyRouteImport = createFileRoute('/dev-ops')()
+const DataOpsLazyRouteImport = createFileRoute('/data-ops')()
 const ContactUsLazyRouteImport = createFileRoute('/contact-us')()
 const ConstructionLazyRouteImport = createFileRoute('/construction')()
 const CloudServiceLazyRouteImport = createFileRoute('/cloud-service')()
+const CleverSparrowLazyRouteImport = createFileRoute('/clever-sparrow')()
 const BusinessOutcomesLazyRouteImport = createFileRoute('/business-outcomes')()
 const AboutUsLazyRouteImport = createFileRoute('/about-us')()
 const IndexLazyRouteImport = createFileRoute('/')()
 
+const VelocityAnalyticsLazyRoute = VelocityAnalyticsLazyRouteImport.update({
+  id: '/velocity-analytics',
+  path: '/velocity-analytics',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() =>
+  import('./routes/velocity-analytics.lazy').then((d) => d.Route),
+)
 const TermsLazyRoute = TermsLazyRouteImport.update({
   id: '/terms',
   path: '/terms',
@@ -114,6 +127,16 @@ const FinancialServicesAndFintechLazyRoute =
   } as any).lazy(() =>
     import('./routes/financial-services-and-fintech.lazy').then((d) => d.Route),
   )
+const DevOpsLazyRoute = DevOpsLazyRouteImport.update({
+  id: '/dev-ops',
+  path: '/dev-ops',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/dev-ops.lazy').then((d) => d.Route))
+const DataOpsLazyRoute = DataOpsLazyRouteImport.update({
+  id: '/data-ops',
+  path: '/data-ops',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/data-ops.lazy').then((d) => d.Route))
 const ContactUsLazyRoute = ContactUsLazyRouteImport.update({
   id: '/contact-us',
   path: '/contact-us',
@@ -129,6 +152,13 @@ const CloudServiceLazyRoute = CloudServiceLazyRouteImport.update({
   path: '/cloud-service',
   getParentRoute: () => rootRouteImport,
 } as any).lazy(() => import('./routes/cloud-service.lazy').then((d) => d.Route))
+const CleverSparrowLazyRoute = CleverSparrowLazyRouteImport.update({
+  id: '/clever-sparrow',
+  path: '/clever-sparrow',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() =>
+  import('./routes/clever-sparrow.lazy').then((d) => d.Route),
+)
 const BusinessOutcomesLazyRoute = BusinessOutcomesLazyRouteImport.update({
   id: '/business-outcomes',
   path: '/business-outcomes',
@@ -169,9 +199,12 @@ export interface FileRoutesByFullPath {
   '/internet-of-thing': typeof InternetOfThingRoute
   '/about-us': typeof AboutUsLazyRoute
   '/business-outcomes': typeof BusinessOutcomesLazyRoute
+  '/clever-sparrow': typeof CleverSparrowLazyRoute
   '/cloud-service': typeof CloudServiceLazyRoute
   '/construction': typeof ConstructionLazyRoute
   '/contact-us': typeof ContactUsLazyRoute
+  '/data-ops': typeof DataOpsLazyRoute
+  '/dev-ops': typeof DevOpsLazyRoute
   '/financial-services-and-fintech': typeof FinancialServicesAndFintechLazyRoute
   '/hybrid-cloud': typeof HybridCloudLazyRoute
   '/industries': typeof IndustriesLazyRoute
@@ -184,6 +217,7 @@ export interface FileRoutesByFullPath {
   '/solutions': typeof SolutionsLazyRoute
   '/technology-and-high-growth-companies': typeof TechnologyAndHighGrowthCompaniesLazyRoute
   '/terms': typeof TermsLazyRoute
+  '/velocity-analytics': typeof VelocityAnalyticsLazyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
@@ -192,9 +226,12 @@ export interface FileRoutesByTo {
   '/internet-of-thing': typeof InternetOfThingRoute
   '/about-us': typeof AboutUsLazyRoute
   '/business-outcomes': typeof BusinessOutcomesLazyRoute
+  '/clever-sparrow': typeof CleverSparrowLazyRoute
   '/cloud-service': typeof CloudServiceLazyRoute
   '/construction': typeof ConstructionLazyRoute
   '/contact-us': typeof ContactUsLazyRoute
+  '/data-ops': typeof DataOpsLazyRoute
+  '/dev-ops': typeof DevOpsLazyRoute
   '/financial-services-and-fintech': typeof FinancialServicesAndFintechLazyRoute
   '/hybrid-cloud': typeof HybridCloudLazyRoute
   '/industries': typeof IndustriesLazyRoute
@@ -207,6 +244,7 @@ export interface FileRoutesByTo {
   '/solutions': typeof SolutionsLazyRoute
   '/technology-and-high-growth-companies': typeof TechnologyAndHighGrowthCompaniesLazyRoute
   '/terms': typeof TermsLazyRoute
+  '/velocity-analytics': typeof VelocityAnalyticsLazyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -216,9 +254,12 @@ export interface FileRoutesById {
   '/internet-of-thing': typeof InternetOfThingRoute
   '/about-us': typeof AboutUsLazyRoute
   '/business-outcomes': typeof BusinessOutcomesLazyRoute
+  '/clever-sparrow': typeof CleverSparrowLazyRoute
   '/cloud-service': typeof CloudServiceLazyRoute
   '/construction': typeof ConstructionLazyRoute
   '/contact-us': typeof ContactUsLazyRoute
+  '/data-ops': typeof DataOpsLazyRoute
+  '/dev-ops': typeof DevOpsLazyRoute
   '/financial-services-and-fintech': typeof FinancialServicesAndFintechLazyRoute
   '/hybrid-cloud': typeof HybridCloudLazyRoute
   '/industries': typeof IndustriesLazyRoute
@@ -231,6 +272,7 @@ export interface FileRoutesById {
   '/solutions': typeof SolutionsLazyRoute
   '/technology-and-high-growth-companies': typeof TechnologyAndHighGrowthCompaniesLazyRoute
   '/terms': typeof TermsLazyRoute
+  '/velocity-analytics': typeof VelocityAnalyticsLazyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -241,9 +283,12 @@ export interface FileRouteTypes {
     | '/internet-of-thing'
     | '/about-us'
     | '/business-outcomes'
+    | '/clever-sparrow'
     | '/cloud-service'
     | '/construction'
     | '/contact-us'
+    | '/data-ops'
+    | '/dev-ops'
     | '/financial-services-and-fintech'
     | '/hybrid-cloud'
     | '/industries'
@@ -256,6 +301,7 @@ export interface FileRouteTypes {
     | '/solutions'
     | '/technology-and-high-growth-companies'
     | '/terms'
+    | '/velocity-analytics'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -264,9 +310,12 @@ export interface FileRouteTypes {
     | '/internet-of-thing'
     | '/about-us'
     | '/business-outcomes'
+    | '/clever-sparrow'
     | '/cloud-service'
     | '/construction'
     | '/contact-us'
+    | '/data-ops'
+    | '/dev-ops'
     | '/financial-services-and-fintech'
     | '/hybrid-cloud'
     | '/industries'
@@ -279,6 +328,7 @@ export interface FileRouteTypes {
     | '/solutions'
     | '/technology-and-high-growth-companies'
     | '/terms'
+    | '/velocity-analytics'
   id:
     | '__root__'
     | '/'
@@ -287,9 +337,12 @@ export interface FileRouteTypes {
     | '/internet-of-thing'
     | '/about-us'
     | '/business-outcomes'
+    | '/clever-sparrow'
     | '/cloud-service'
     | '/construction'
     | '/contact-us'
+    | '/data-ops'
+    | '/dev-ops'
     | '/financial-services-and-fintech'
     | '/hybrid-cloud'
     | '/industries'
@@ -302,6 +355,7 @@ export interface FileRouteTypes {
     | '/solutions'
     | '/technology-and-high-growth-companies'
     | '/terms'
+    | '/velocity-analytics'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -311,9 +365,12 @@ export interface RootRouteChildren {
   InternetOfThingRoute: typeof InternetOfThingRoute
   AboutUsLazyRoute: typeof AboutUsLazyRoute
   BusinessOutcomesLazyRoute: typeof BusinessOutcomesLazyRoute
+  CleverSparrowLazyRoute: typeof CleverSparrowLazyRoute
   CloudServiceLazyRoute: typeof CloudServiceLazyRoute
   ConstructionLazyRoute: typeof ConstructionLazyRoute
   ContactUsLazyRoute: typeof ContactUsLazyRoute
+  DataOpsLazyRoute: typeof DataOpsLazyRoute
+  DevOpsLazyRoute: typeof DevOpsLazyRoute
   FinancialServicesAndFintechLazyRoute: typeof FinancialServicesAndFintechLazyRoute
   HybridCloudLazyRoute: typeof HybridCloudLazyRoute
   IndustriesLazyRoute: typeof IndustriesLazyRoute
@@ -326,10 +383,18 @@ export interface RootRouteChildren {
   SolutionsLazyRoute: typeof SolutionsLazyRoute
   TechnologyAndHighGrowthCompaniesLazyRoute: typeof TechnologyAndHighGrowthCompaniesLazyRoute
   TermsLazyRoute: typeof TermsLazyRoute
+  VelocityAnalyticsLazyRoute: typeof VelocityAnalyticsLazyRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/velocity-analytics': {
+      id: '/velocity-analytics'
+      path: '/velocity-analytics'
+      fullPath: '/velocity-analytics'
+      preLoaderRoute: typeof VelocityAnalyticsLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/terms': {
       id: '/terms'
       path: '/terms'
@@ -414,6 +479,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FinancialServicesAndFintechLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dev-ops': {
+      id: '/dev-ops'
+      path: '/dev-ops'
+      fullPath: '/dev-ops'
+      preLoaderRoute: typeof DevOpsLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/data-ops': {
+      id: '/data-ops'
+      path: '/data-ops'
+      fullPath: '/data-ops'
+      preLoaderRoute: typeof DataOpsLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact-us': {
       id: '/contact-us'
       path: '/contact-us'
@@ -433,6 +512,13 @@ declare module '@tanstack/react-router' {
       path: '/cloud-service'
       fullPath: '/cloud-service'
       preLoaderRoute: typeof CloudServiceLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/clever-sparrow': {
+      id: '/clever-sparrow'
+      path: '/clever-sparrow'
+      fullPath: '/clever-sparrow'
+      preLoaderRoute: typeof CleverSparrowLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/business-outcomes': {
@@ -487,9 +573,12 @@ const rootRouteChildren: RootRouteChildren = {
   InternetOfThingRoute: InternetOfThingRoute,
   AboutUsLazyRoute: AboutUsLazyRoute,
   BusinessOutcomesLazyRoute: BusinessOutcomesLazyRoute,
+  CleverSparrowLazyRoute: CleverSparrowLazyRoute,
   CloudServiceLazyRoute: CloudServiceLazyRoute,
   ConstructionLazyRoute: ConstructionLazyRoute,
   ContactUsLazyRoute: ContactUsLazyRoute,
+  DataOpsLazyRoute: DataOpsLazyRoute,
+  DevOpsLazyRoute: DevOpsLazyRoute,
   FinancialServicesAndFintechLazyRoute: FinancialServicesAndFintechLazyRoute,
   HybridCloudLazyRoute: HybridCloudLazyRoute,
   IndustriesLazyRoute: IndustriesLazyRoute,
@@ -503,6 +592,7 @@ const rootRouteChildren: RootRouteChildren = {
   TechnologyAndHighGrowthCompaniesLazyRoute:
     TechnologyAndHighGrowthCompaniesLazyRoute,
   TermsLazyRoute: TermsLazyRoute,
+  VelocityAnalyticsLazyRoute: VelocityAnalyticsLazyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

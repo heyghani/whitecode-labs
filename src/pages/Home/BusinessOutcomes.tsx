@@ -11,19 +11,15 @@ const BusinessOutcomes = () => {
       text={
         <>
           <p className='mb-2'>
-            At White Code Labs, success isn't measured by technologies
-            deployed—it's measured by tangible business results that impact your
-            bottom line. We help enterprises achieve in weeks what traditionally
-            takes quarters, turning technology investments into quantifiable
-            business value.
+            We help enterprises move faster and operate more efficiently without
+            sacrificing governance or reliability. Our engagements focus on
+            improving delivery velocity, optimizing cloud and infrastructure
+            spend, and increasing system availability across mission-critical
+            platforms.
           </p>
           <p>
-            Our clients ship customer-facing features 3–5x faster, replacing
-            six-figure specialist hires and fragmented tooling with integrated,
-            automated solutions that scale with demand. We transform
-            infrastructure from a cost center into a revenue enabler: optimizing
-            cloud spend by 40–60%, reducing data incidents by 80%, and ensuring
-            99.99% uptime that protects customer trust and contractual SLAs.
+            The result is technology that supports business growth, reduces
+            operational risk, and delivers sustained value over time
           </p>
         </>
       }

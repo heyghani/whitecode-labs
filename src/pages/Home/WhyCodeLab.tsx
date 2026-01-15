@@ -11,22 +11,14 @@ const WhyCodeLab = () => {
       text={
         <>
           <p className='mb-2'>
-            White Code Labs partners with enterprises to deliver
-            mission-critical systems that combine institutional-grade security,
-            operational resilience, and measurable business impact. With deep
-            expertise across cloud infrastructure, data architecture, and
-            enterprise integration, we build solutions that meet the rigorous
-            compliance, performance, and governance standards required by
-            Fortune 500 organizations.
+            White Code Labs partners with enterprises to build and operate
+            mission-critical systems where failure is not an option. We believe
+            most enterprise outages, cost overruns, and delivery delays are not
+            caused by technology limitations, but by weak architecture,
+            fragmented ownership, and governance gaps introduced early in the
+            system lifecycle.
           </p>
-          <p>
-            Our teams integrate seamlessly with your IT organization—providing
-            dedicated technical leadership, transparent governance, and
-            accountable delivery against defined SLAs. We engineer
-            infrastructure designed for regulatory compliance, 99.99% uptime,
-            and long-term operational excellence that reduces risk and performs
-            reliably under global enterprise demands.
-          </p>
+          <p>We exist to correct those failures at the foundation.</p>
         </>
       }
     />

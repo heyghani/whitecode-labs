@@ -13,14 +13,15 @@ export const CloudServices = () => {
       text={
         <>
           <p>
-            Build your competitive edge through engineering. White Code Labs
-            aligns science, technology and domain expertise to solve real-world
-            problems, and drive growth.
+            White Code Labs designs and delivers secure, scalable cloud
+            platforms that enable agility, performance, and operational
+            efficiency across your organization.
           </p>
           <p>
-            Our innovation-led enterprise application services are reinventing
-            digital infrastructure with speed and agility, enabling 360 value at
-            scale. Give yourself an engineering edge by leveraging ours.
+            From cloud strategy to implementation and optimization, we build
+            environments that are resilient by design, cost-aware, and aligned
+            to your business objectives—so the cloud accelerates innovation
+            without increasing complexity.
           </p>
         </>
       }

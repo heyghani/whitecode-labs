@@ -11,16 +11,15 @@ const OurMission = () => {
       text={
         <>
           <p className='mb-2'>
-            Our mission is to engineer and deliver enterprise-grade services,
-            solutions, and platforms that reduce operational costs, accelerate
-            time-to-market, and provide the reliability modern businesses
-            demand.
+            Our mission is to help enterprises move faster and operate more
+            efficiently without compromising security, governance, or long-term
+            operability.
           </p>
 
           <p>
-            We build secure, scalable systems; both custom and
-            productized—designed for high availability, performance, and
-            long-term value.
+            We engineer enterprise-grade systems — custom and productized —
+            designed to remain reliable, performant, and compliant under
+            real-world enterprise conditions.
           </p>
           <br />
           <br />

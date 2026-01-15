@@ -9,6 +9,7 @@ const BusinessOutcomesSection4 = () => {
       imgAlt={'Business Outcomes Section'}
       heading={'Clever Sparrow™'}
       rtl
+      btnLink='/clever-sparrow'
       text={
         <>
           <p className='mb-2'>

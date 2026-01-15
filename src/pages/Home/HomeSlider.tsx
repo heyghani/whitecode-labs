@@ -118,7 +118,7 @@ export default function HomeSlider() {
           }}
           className=' h-full w-full max-w-[100vw] '
           loop
-          autoplay
+          autoplay={{ delay: 5000 }}
         >
           {bannerData.map((banner, i) => (
             <SwiperSlide key={i}>

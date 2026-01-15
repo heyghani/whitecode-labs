@@ -34,7 +34,7 @@ const NavLink = ({
 const Copyright = () => (
   <div className='flex flex-col gap-1 border-t-2 pb-8'>
     <div className='flex flex-wrap justify-center gap-1 py-2 text-center text-[16px] leading-[30px] text-[#666666CC]'>
-      @2023 XYZ Innovations, Inc.
+      @2026 XYZ Innovations, Inc.
       <br />
       <a href='#'>All rights reserved.</a>
     </div>
@@ -152,6 +152,14 @@ function Header() {
             <hr className='border-b-2' />
             <NavLink href='/services' onClick={closeHeader}>
               Services
+            </NavLink>
+            <hr className='border-b-2' />
+            <NavLink href='/solutions' onClick={closeHeader}>
+              Solutions
+            </NavLink>
+            <hr className='border-b-2' />
+            <NavLink href='/outcomes' onClick={closeHeader}>
+              Outcomes
             </NavLink>
             <hr className='border-b-2' />
             <NavLink href='/contact-us' onClick={closeHeader}>

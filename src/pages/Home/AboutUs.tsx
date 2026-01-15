@@ -13,20 +13,17 @@ const OurMission = () => {
       text={
         <>
           <p>
-            White Code Labs architects secure, scalable digital ecosystems that
-            deliver measurable enterprise value. We are the technology partner
-            ambitious organizations turn to when the stakes are high and
-            mediocrity isn’t an option.
+            White Code Labs is an enterprise technology partner for
+            organizations where reliability, security, and governance are
+            non-negotiable. We design and modernize mission-critical systems
+            that deliver measurable business impact — without introducing
+            operational risk.
           </p>
           <p>
-            We modernize legacy infrastructure, integrate mission-critical
-            systems, and engineer cloud-native, data-driven, and AI-powered
-            platforms built for 99.9% uptime, regulatory compliance, and
-            enterprise-grade security. Beyond technology, we deliver strategic
-            partnership, deep domain expertise, and a relentless commitment to
-            your success.
+            We architect secure, scalable platforms built for regulatory
+            compliance, high availability, and long-term enterprise operations.
           </p>
-          
+          <br />
         </>
       }
     />

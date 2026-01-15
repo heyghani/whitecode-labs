@@ -8,6 +8,7 @@ const BusinessOutcomesSection3 = () => {
       img={img1}
       imgAlt={'Business Outcomes Section'}
       heading={'Velocity Analytics™'}
+      btnLink='/velocity-analytics'
       text={
         <>
           <p className='mb-2'>

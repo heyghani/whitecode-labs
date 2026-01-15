@@ -9,9 +9,9 @@ const Banner = () => {
       bgSmall={bannerSmall}
       heading={
         <>
-          <span>Integration-as-a-Service</span>
+          <span>Integration-as-a-Service:</span>
           <br />
-          <span>Connect, automate, accelerate</span>
+          <span>Connect, automate, accelerate.</span>
         </>
       }
       text={
@@ -24,8 +24,8 @@ const Banner = () => {
         </>
       }
       classNames={{
-        heading: 'w-[85%] md:max-w-screen text-white',
-        text: 'w-[70%] text-white',
+        heading: 'w-[85%] md:max-w-screen text-[#252627]',
+        text: 'w-[70%] text-[#252627]',
       }}
     />
   )

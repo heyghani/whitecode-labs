@@ -13,14 +13,15 @@ export const SoftwareDevelopment = () => {
       text={
         <>
           <p>
-            Build your competitive edge through engineering. White Code Labs
-            aligns science, technology and domain expertise to solve real-world
-            problems, and drive growth.
+            White Code Labs combines modern engineering practices, scalable
+            architectures, and deep domain expertise to design and deliver
+            software that supports growth, resilience, and long-term business
+            value.
           </p>
           <p>
-            Our innovation-led enterprise application services are reinventing
-            digital infrastructure with speed and agility, enabling 360 value at
-            scale. Give yourself an engineering edge by leveraging ours.
+            From concept to production, we engineer systems that integrate
+            seamlessly, scale predictably, and evolve with your business—turning
+            technology into a competitive advantage, not a constraint.
           </p>
         </>
       }

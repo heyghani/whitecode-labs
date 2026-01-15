@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div className='flex w-1/2 flex-col space-y-6 md:flex-row md:justify-between md:space-y-0'>
           <div>
-            <h3 className='font-lato mb-4 text-[20px] font-semibold leading-[30px]'>
+            <h3 className='font-lato mb-4 text-[16px] font-semibold leading-[30px]'>
               Services
             </h3>
             <ul className='text-[14px] leading-[32px] text-[#DADADA]'>
@@ -74,7 +74,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className='font-lato mb-4 text-[20px] font-semibold leading-[30px]'>
+            <h3 className='font-lato mb-4 text-[16px] font-semibold leading-[30px]'>
               Solutions
             </h3>
             <ul className='text-[14px] leading-[32px] text-[#DADADA]'>
@@ -135,18 +135,10 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className='font-lato leading[30px] mb-4 text-[20px] font-semibold'>
-              About Us
+            <h3 className='font-lato leading[30px] mb-4 text-[16px] font-semibold'>
+              Company
             </h3>
             <ul className='text-[14px] leading-[32px] text-[#DADADA]'>
-              <li>
-                <Link
-                  className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
-                  to='/contact-us'
-                >
-                  Contact Us
-                </Link>
-              </li>
               <li>
                 <Link
                   className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
@@ -178,18 +170,27 @@ export default function Footer() {
                 <Link
                   className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
                   to='/about-us'
-                  hash='awards'
+                  hash='our-commitment'
                 >
-                  Awards & Accolades
+                  Our Commitment
                 </Link>
               </li>
               <li>
                 <Link
                   className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
                   to='/about-us'
-                  hash='our-commitment'
+                  hash='awards'
                 >
-                  Our Commitment
+                  Awards & Accolades
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
+                  to='/contact-us'
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>

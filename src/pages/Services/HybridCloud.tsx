@@ -13,17 +13,15 @@ export const HybridCloud = () => {
       text={
         <>
           <p>
-            Changing business requires hybrid multi cloud solutions with “as a
-            service” simplicity and complete compatibility from everywhere. With
-            a common approach and experience, White Code Labs will help you
-            leverage the cloud for faster, more dynamic delivery of services and
-            frictionless data movement.
+            White Code Labs designs and delivers secure, integrated hybrid cloud
+            platforms that combine on-premises and cloud environments to
+            maximize flexibility, control, and performance.
           </p>
           <p>
-            Our hybrid multi cloud enables you to meet your cloud needs by
-            extending an on-premises environment seamlessly into the public
-            cloud, making it more agile, scalable, efficient, and cost
-            effective.
+            From strategy to deployment and ongoing optimization, we enable
+            seamless workload portability, unified management, and built-in
+            governance—so your business can innovate across environments without
+            sacrificing security, compliance, or operational clarity.
           </p>
         </>
       }
