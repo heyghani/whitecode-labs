@@ -11,7 +11,7 @@ import { FullPageSlider } from '@components/FullPageSlider'
 
 const sections = [
   { id: 'banner', Component: Banner },
-  { id: 'our-capabilities', Component: OurCapabilities },
+  // { id: 'our-capabilities', Component: OurCapabilities },
   { id: 'our-values', Component: OurValues },
   { id: 'our-vision', Component: OurVision },
   { id: 'awards', Component: Awards },

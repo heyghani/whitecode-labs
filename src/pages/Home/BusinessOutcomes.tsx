@@ -8,6 +8,7 @@ const BusinessOutcomes = () => {
       img={Hero}
       imgAlt={'Business Outcomes'}
       heading={'Business Outcomes'}
+      rtl
       text={
         <>
           <p className='mb-2'>

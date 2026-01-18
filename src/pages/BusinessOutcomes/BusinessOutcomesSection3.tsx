@@ -4,7 +4,7 @@ import img1 from '@images/Business/section-3.png'
 const BusinessOutcomesSection3 = () => {
   return (
     <SectionType2
-      classNames={{ container: 'bg-white' }}
+      classNames={{ container: 'bg-[#F7F3F3]' }}
       img={img1}
       imgAlt={'Business Outcomes Section'}
       heading={'Velocity Analytics™'}
@@ -16,9 +16,7 @@ const BusinessOutcomesSection3 = () => {
             insights without the enterprise price tag. This serverless DataOps
             pipeline provides sub-second analytics on funnels, CAC, and
             LTV—ingesting data directly from Stripe, Segment, and application
-            databases. With pre-built connectors, SQL-based transformations, and
-            a Metabase dashboard, teams are live in days, not months, for under
-            $500/month.
+            databases.
           </p>
           <p>
             Unlike bloated analytics tools, Velocity Analytics gives startups

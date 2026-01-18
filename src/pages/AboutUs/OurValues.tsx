@@ -1,5 +1,5 @@
 // import React from 'react'
-import Hero from '@images/Home/OurValues/our-values.png'
+import Hero from '@images/AboutUs/Capabilities/our-capabilities-img.png'
 import { SectionType2 } from '@components/Sections/SectionType2'
 
 const OurValues = () => {

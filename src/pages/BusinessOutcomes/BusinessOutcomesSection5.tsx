@@ -4,7 +4,7 @@ import img1 from '@images/Business/section-5.png'
 const BusinessOutcomesSection5 = () => {
   return (
     <SectionType2
-      classNames={{ container: 'bg-white' }}
+      classNames={{ container: 'bg-[#F7F3F3]' }}
       img={img1}
       imgAlt={'Business Outcomes Section'}
       heading={'Enterprise Impact'}

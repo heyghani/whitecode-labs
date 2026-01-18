@@ -1,4 +1,5 @@
 import { twJoin, twMerge } from 'tailwind-merge'
+import { Link } from '@tanstack/react-router'
 import { Button, SectionHeader, SectionInner, SectionOuter } from '../common'
 
 type Props = {
@@ -69,10 +70,12 @@ const Card = ({
   heading,
   text,
   btnText,
+  btnLink,
 }: {
   heading: string
   text: string
   btnText: string
+  btnLink: string
 }) => (
   <div
     className={twJoin(
@@ -87,6 +90,8 @@ const Card = ({
     <p className='text-[14.5px] leading-[20px] tracking-[0.1px] text-[#666666] md:mb-5 md:text-[15px] '>
       {text}
     </p>
-    <Button varient='primary' text={btnText} />
+    <Link to={btnLink}>
+      <Button varient='primary' text={btnText} />
+    </Link>
   </div>
 )

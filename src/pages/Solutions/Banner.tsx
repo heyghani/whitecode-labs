@@ -10,15 +10,15 @@ const Banner = () => {
       heading={'Our Solutions'}
       text={
         <>
-          <p className='font-black'>
+          <p>
             Purpose-built solutions that solve real problems—scalable,
             integrated, and focused on measurable business outcomes.
           </p>
         </>
       }
       classNames={{
-        heading: 'w-[85%] md:max-w-screen ',
-        text: 'w-[70%]',
+        heading: 'text-[#252627] font-bold w-[85%] md:max-w-screen ',
+        text: 'text-black  w-[70%]',
       }}
     />
   )

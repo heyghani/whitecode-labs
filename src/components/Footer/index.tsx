@@ -50,6 +50,14 @@ export default function Footer() {
               <li>
                 <Link
                   className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
+                  to='/dev-ops'
+                >
+                  DevOps
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
                   to='/internet-of-thing'
                 >
                   Internet of Things
@@ -69,6 +77,14 @@ export default function Footer() {
                   to='/integration-as-a-service'
                 >
                   Enterprise Integration
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
+                  to='/data-ops'
+                >
+                  DataOps
                 </Link>
               </li>
             </ul>
@@ -130,6 +146,24 @@ export default function Footer() {
                   hash='solution6'
                 >
                   Delivery Acceleration
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
+                  to='/solutions'
+                  hash='solution7'
+                >
+                  Data Reliability
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
+                  to='/solutions'
+                  hash='solution8'
+                >
+                  Cost Intelligence
                 </Link>
               </li>
             </ul>

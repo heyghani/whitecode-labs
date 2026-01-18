@@ -20,6 +20,7 @@ const Solutions2 = () => {
             systems for speed, accuracy, and predictability. The result?
             Sustained productivity gains and ROI that grows over time.
           </p>
+          <br />
         </>
       }
       rtl

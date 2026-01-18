@@ -7,11 +7,12 @@ const Banner = () => {
     <SectionType1
       bg={banner}
       bgSmall={bannerSmall}
-      heading={'Velocity Analytics.'}
+      heading={'Velocity Analytics™.'}
       text={
         <>
           <p>
-           Real-time, decision-ready analytics for modern startups — without enterprise pricing, overhead,  or lock-in.
+            Real-time, decision-ready analytics for modern startups — without
+            enterprise pricing, overhead, or lock-in.
           </p>
         </>
       }

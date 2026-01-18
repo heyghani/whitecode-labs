@@ -9,16 +9,13 @@ const OurSolutions = () => {
       imgAlt={'Our Solutions'}
       heading={'Our Solutions'}
       btnLink='/solutions'
-      rtl={true}
       text={
         <>
           <p className='mb-2'>
             We deliver purpose-built solutions that transform your boldest
             ambitions into reality. From intelligent automation platforms to
             enterprise-grade applications, our proven solutions don't just solve
-            problems. They unlock new possibilities, accelerate breakthrough
-            innovation, and deliver the competitive advantages that define
-            industry leaders.
+            problems.
           </p>
           <p>
             With White Code Labs, you are not just investing in technology. You

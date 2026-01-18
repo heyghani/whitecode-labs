@@ -17,7 +17,7 @@ const sections = [
   { id: 'white-codelab', Component: WhyCodeLab },
   { id: 'our-solutions', Component: OurSolutions },
   { id: 'business-outcomes', Component: BusinessOutcomes },
-  { id: 'capabilities', Component: Capabilities },
+  // { id: 'capabilities', Component: Capabilities },
   { id: 'make-move', Component: CTA },
   { id: 'footer', Component: Footer },
 ]
