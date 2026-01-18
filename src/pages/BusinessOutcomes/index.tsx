@@ -3,7 +3,7 @@ import Banner from './banner'
 
 import Footer from '@components/Footer'
 import BusinessOutcomesSection1 from './BusinessOutcomesSection1'
-import BusinessOutcomesSection2 from './BusinessOutcomesSection2'
+// import BusinessOutcomesSection2 from './BusinessOutcomesSection2'
 import BusinessOutcomesSection3 from './BusinessOutcomesSection3'
 import BusinessOutcomesSection4 from './BusinessOutcomesSection4'
 import BusinessOutcomesSection5 from './BusinessOutcomesSection5'

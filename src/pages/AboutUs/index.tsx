@@ -1,6 +1,6 @@
 import Footer from '@components/Footer'
 import Banner from './Banner'
-import OurCapabilities from './OurCapabilities'
+// import OurCapabilities from './OurCapabilities'
 import OurValues from './OurValues'
 import Awards from './AwardsAndAcolades'
 import OurClients from './OurClients'

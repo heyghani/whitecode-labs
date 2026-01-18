@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer'
 import AboutUs from './AboutUs'
-import Capabilities from './Capabilities'
+// import Capabilities from './Capabilities'
 import HomeSlider from './HomeSlider'
 import OurMission from './OurMission'
 import OurSolutions from './OurSolutions'
