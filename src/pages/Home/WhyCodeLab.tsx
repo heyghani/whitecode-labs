@@ -8,6 +8,7 @@ const WhyCodeLab = () => {
       img={Hero}
       imgAlt={'Why White Code Labs?'}
       heading={'Why White Code Labs?'}
+      rtl
       text={
         <>
           <p className='mb-2'>

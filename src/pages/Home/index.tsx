@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer'
 import AboutUs from './AboutUs'
-import Capabilities from './Capabilities'
+// import Capabilities from './Capabilities'
 import HomeSlider from './HomeSlider'
 import OurMission from './OurMission'
 import OurSolutions from './OurSolutions'
@@ -17,7 +17,7 @@ const sections = [
   { id: 'white-codelab', Component: WhyCodeLab },
   { id: 'our-solutions', Component: OurSolutions },
   { id: 'business-outcomes', Component: BusinessOutcomes },
-  { id: 'capabilities', Component: Capabilities },
+  // { id: 'capabilities', Component: Capabilities },
   { id: 'make-move', Component: CTA },
   { id: 'footer', Component: Footer },
 ]

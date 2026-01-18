@@ -7,6 +7,8 @@ import Solutions3 from './Solutions3'
 import Solutions4 from './Solutions4'
 import Solutions5 from './Solutions5'
 import Solutions6 from './Solutions6'
+import Solutions7 from './Solutions7'
+import Solutions8 from './Solutions8'
 import { CTA } from './CTA'
 
 const sections = [
@@ -17,6 +19,8 @@ const sections = [
   { id: 'solution4', Component: Solutions4 },
   { id: 'solution5', Component: Solutions5 },
   { id: 'solution6', Component: Solutions6 },
+  { id: 'solution7', Component: Solutions7 },
+  { id: 'solution8', Component: Solutions8 },
   { id: 'cta', Component: CTA },
   { id: 'footer', Component: Footer },
 ]

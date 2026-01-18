@@ -14,7 +14,7 @@ const cardData = [
     heading: 'Schedule Now',
     text: 'We need 5 minutes of your time to book a meeting and schedule a call with us.',
     btnText: 'Schedule Now',
-    btnLink: '/contact-us',
+    btnLink: '/contact-us#form',
   },
 ]
 

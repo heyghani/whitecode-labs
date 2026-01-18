@@ -26,7 +26,7 @@ const bannerData = [
     backgroundImageSmall: banner1small,
     textColor: 'black',
     content:
-      'White Code Labs was ranked one of the Top Companies in Hybrid Cloud, alongside; Amazon AWS, Microsoft, Rackspace, Digital Ocean, and RightScale. ',
+      'White Code Labs was recognized as a leading company in hybrid cloud, alongside AWS, Microsoft, Rackspace, DigitalOcean, and RightScale.',
     btnLink:
       'https://www.whitecodelabs.com/static/media/Innovations-2.51b1eefdc92f5feeef1d.pdf',
   },
@@ -35,7 +35,7 @@ const bannerData = [
     backgroundImageSmall: banner2small,
     textColor: 'black',
     content:
-      'White Code Labs was recognized as one of the Top Disruptors in Cloud Computing, alongside; Cloudera, Digital Ocean and Rackspace.',
+      'White Code Labs was recognized by The CEO Views as a top disruptor in cloud computing, alongside Cloudera, DigitalOcean, and Rackspace.',
     btnLink:
       'https://theceoviews.com/top-10-most-distruptive-cloud-solution-provider-2019/',
   },
@@ -44,7 +44,7 @@ const bannerData = [
     backgroundImageSmall: banner3small,
     textColor: 'black',
     content:
-      'White Code Labs was awarded as one of Top Software Companies in the Financial Services Industry.',
+      'White Code Labs was recognized by CFO Tech Outlook as a leading software company serving the financial services industry.',
     btnLink:
       'https://www.cfotechoutlook.com/magazines/August2018/Financial_Security/',
   },
@@ -53,7 +53,7 @@ const bannerData = [
     backgroundImageSmall: banner4small,
     textColor: 'white',
     content:
-      'White Code Labs was awarded one of the Top Software Companies in IoT, alongside; IBM, Oracle, Accenture and Honeywell.',
+      'White Code Labs was recognized by Enterprise Viewpoint as a leading software company in IoT, alongside IBM, Oracle, Accenture, and Honeywell.',
     btnLink: 'https://enterpriseviewpoint.com/iot-innovators-2019/',
   },
   {
@@ -61,8 +61,8 @@ const bannerData = [
     backgroundImageSmall: banner4small,
     textColor: 'black',
     content:
-      'White Code Labs has been recognized as a Top Software Company in the Automation industry.',
-    btnLink: 'https://enterpriseviewpoint.com/iot-innovators-2019/',
+      'White Code Labs was recognized by American Business Vanguard as a leading software company in enterprise automation.',
+    btnLink: 'https://www.gpmg.uk/winners/american-business-vanguard-2026',
   },
 ]
 
@@ -83,7 +83,7 @@ const BannerContent = ({
     <div
       className={`md:bg-[url(${backgroundImage})] bg-[url(${backgroundImageSmall})] flex h-full items-center bg-cover bg-[75%] bg-no-repeat md:bg-center`}
     >
-      <div className='flex h-96 w-full flex-col items-start justify-start gap-20 px-8 pt-5 text-center md:mx-auto md:max-w-6xl md:justify-end md:gap-10 md:pb-40 md:pt-0 xl:px-0'>
+      <div className='flex h-[420px] w-full flex-col items-start justify-start gap-20 px-8 pt-5 text-center md:mx-auto md:max-w-6xl md:justify-end md:gap-10 md:pb-40 md:pt-0 xl:px-0'>
         <h2
           className={twMerge(
             'font-lato max-w-[250px]  text-left text-[21px] font-medium leading-[31.2px] md:mr-auto md:max-w-[65%] md:text-[24px] md:leading-[34px] md:tracking-[-0.2px] ',
