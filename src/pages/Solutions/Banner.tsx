@@ -1,5 +1,5 @@
 import banner from '@images/Solutions/Banner-Solutions.jpg'
-import bannerSmall from '@images/Solutions/banner-solutions2.jpg'
+// import bannerSmall from '@images/Solutions/banner-solutions2.jpg'
 import { SectionType1 } from '@components/Sections/SectionType1'
 
 const Banner = () => {

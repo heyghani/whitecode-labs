@@ -4,6 +4,7 @@ type Props = {
   varient?: 'outline' | 'primary'
   text: string
   className?: string
+  disabled?: boolean
   onClick?: () => void
 }
 

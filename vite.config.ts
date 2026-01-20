@@ -12,8 +12,8 @@ export default defineConfig({
   plugins: [react(), TanStackRouterVite()],
   resolve: {
     alias: {
-      "@components": resolve(root, 'components'),
-      "@images": resolve(root, 'assets/images')
+      '@components': resolve(root, 'components'),
+      '@images': resolve(root, 'assets/images'),
     },
   },
   build: {
