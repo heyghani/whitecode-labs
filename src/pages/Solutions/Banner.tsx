@@ -1,12 +1,12 @@
 import banner from '@images/Solutions/Banner-Solutions.jpg'
-import bannerSmall from '@images/Solutions/banner-solutions2.jpg'
+// import bannerSmall from '@images/Solutions/banner-solutions2.jpg'
 import { SectionType1 } from '@components/Sections/SectionType1'
 
 const Banner = () => {
   return (
     <SectionType1
       bg={banner}
-      bgSmall={bannerSmall}
+      bgSmall={banner}
       heading={'Our Solutions'}
       text={
         <>
@@ -17,7 +17,7 @@ const Banner = () => {
         </>
       }
       classNames={{
-        heading: 'text-[#252627] font-bold w-[85%] md:max-w-screen ',
+        heading: 'text-[#252627] font-bold w-[85%] md:max-w-screen',
         text: 'text-black  w-[70%]',
       }}
     />

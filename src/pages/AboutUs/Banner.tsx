@@ -11,13 +11,12 @@ const Banner = () => {
       text={
         <>
           <p>
-            We are an award-winning, enterprise, software service and solution
-            company.
+            White Code Labs is an award-winning, enterprise technology company.
           </p>
           <p>
-            We offer, develop, and integrate software services, solutions, and
-            products that empower enterprises, business organizations, and
-            communities.
+            We design, build, and integrate cloud, data, and automation
+            platforms that help enterprises and organizations operate securely,
+            and scale efficiently.
           </p>
         </>
       }

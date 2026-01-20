@@ -20,13 +20,11 @@ const BusinessOutcomesSection4 = () => {
             customer journey beyond last-click tracking.
           </p>
           <p>
-            With pre-built ad connectors, real-time ROAS dashboards, and
-            automated budget recommendations, teams go from confusion to clarity
-            in 14 days—for under $600/month. Clever Sparrow scales
-            automatically, detects platform discrepancies, and surfaces true CAC
-            and LTV by cohort, helping startups cut wasted spend by up to 40%
-            while replacing costly analysts and tooling. Enterprise-grade
-            attribution—built for startups that need results, not guesswork.
+            Clever Sparrow scales automatically, detects platform discrepancies,
+            and surfaces true CAC and LTV by cohort, helping startups cut wasted
+            spend by up to 40% while replacing costly analysts and tooling.
+            Enterprise-grade attribution—built for startups that need results,
+            not guesswork.
           </p>
         </>
       }

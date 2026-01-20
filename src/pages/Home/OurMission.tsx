@@ -5,6 +5,7 @@ import { SectionType2 } from '@components/Sections/SectionType2'
 const OurMission = () => {
   return (
     <SectionType2
+      classNames={{ container: 'bg-white' }}
       img={Hero}
       imgAlt={'Our Mission'}
       heading={'Our Mission'}

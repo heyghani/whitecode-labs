@@ -18,7 +18,7 @@ const Banner = () => {
       }
       classNames={{
         heading: 'w-[85%] md:max-w-screen ',
-        text: 'w-[70%]',
+        text: 'w-[70%] text-[#252627]',
       }}
     />
   )

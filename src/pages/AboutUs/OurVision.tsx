@@ -12,19 +12,18 @@ const OurCapabilities = () => {
       text={
         <>
           <p>
-            At White Code Labs, we envision a world where technology becomes
-            truly seamless, empowering organizations to innovate without
-            barriers. Our goal is to create intelligent, scalable, and secure
-            systems that become the invisible backbone of modern digital
-            experiences.
+            To make enterprise technology seamless, intelligent, and
+            invisible—so organizations can innovate, scale, and lead with
+            confidence. We engineer secure, future-ready systems for what’s
+            next.
           </p>
           <p>
-            We believe the future lies in hybrid cloud ecosystems, AI-driven
-            automation, and global collaboration, and we are committed to
-            shaping that future with bold ideas, ethical innovation, and
-            relentless execution.
+            We believe the next generation of enterprise platforms will be built
+            on hybrid cloud, intelligent automation, and data-driven
+            decision-making. Our role is to design and deliver the foundational
+            systems that enable long-term resilience, governance, and
+            sustainable growth.
           </p>
-          <p>We don’t just build for today. We engineer for what’s next.</p>
         </>
       }
     />

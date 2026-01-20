@@ -12,21 +12,63 @@ import { BiSolidMessageRoundedDots } from 'react-icons/bi'
 import { BsPersonFill } from 'react-icons/bs'
 import { MdMail } from 'react-icons/md'
 
+// Replace with your Google Apps Script deployment URL
+const GOOGLE_APPS_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbw9Z_-cD9a5d6VwekTGkXTwf0ssDJHnBY5HDY1kpB-cp38c2n7-LpGSD3Aaucbr0lC-TA/exec'
+
 export const GetInTouch = () => {
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
   const [webSite, setWebSite] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
-  const handleSubmit = () => {
-    // e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', { fullName, email, phone, message })
-    setFullName('')
-    setEmail('')
-    setPhone('')
-    setMessage('')
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+
+    if (!fullName || !email || !phone || !message) {
+      setStatus('error')
+      setTimeout(() => setStatus('idle'), 3000)
+      return
+    }
+
+    setLoading(true)
+    setStatus('idle')
+
+    try {
+      const formData = new URLSearchParams()
+      formData.append('fullName', fullName)
+      formData.append('email', email)
+      formData.append('phone', phone)
+      formData.append('website', webSite)
+      formData.append('message', message)
+
+      const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: formData,
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        setFullName('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
+        setWebSite('')
+        setTimeout(() => setStatus('idle'), 3000)
+      } else {
+        setStatus('error')
+        setTimeout(() => setStatus('idle'), 3000)
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setStatus('error')
+      setTimeout(() => setStatus('idle'), 3000)
+    } finally {
+      setLoading(false)
+    }
   }
   return (
     <SectionOuter>
@@ -34,10 +76,19 @@ export const GetInTouch = () => {
         <SectionHeader>Get In Touch!</SectionHeader>
 
         <form
-          action='#'
           onSubmit={handleSubmit}
           className='mx-auto grid h-fit w-full max-w-[814px] grid-cols-1 gap-5 rounded-xl bg-white p-5 shadow-[0px_0px_11px_1px_rgba(0,0,0,0.2)] md:grid-cols-2'
         >
+          {status === 'success' && (
+            <div className='col-span-1 rounded bg-green-100 p-3 text-green-700 md:col-span-2'>
+              ✓ Form submitted successfully!
+            </div>
+          )}
+          {status === 'error' && (
+            <div className='col-span-1 rounded bg-red-100 p-3 text-red-700 md:col-span-2'>
+              ✗ Please fill all required fields
+            </div>
+          )}
           <Input
             icon={<BsPersonFill className='w-4 text-lg' />}
             required
@@ -94,7 +145,11 @@ export const GetInTouch = () => {
           />
 
           <div className='col-span-1 flex justify-center md:col-span-2'>
-            <Button text={'Submit'} varient='primary' />
+            <Button
+              text={loading ? 'Submitting...' : 'Submit'}
+              varient='primary'
+              disabled={loading}
+            />
           </div>
         </form>
       </SectionInner>
