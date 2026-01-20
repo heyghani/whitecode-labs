@@ -6,7 +6,7 @@ import { SectionType2 } from '@components/Sections/SectionType2'
 export const Confidence = () => {
   return (
     <SectionType2
-      classNames={{ container: 'bg-white' }}
+      classNames={{ container: 'bg-[#F7F3F3]' }}
       img={content}
       imgAlt={'Move Faster With Confidence.'}
       heading={'Move Faster With Confidence.'}

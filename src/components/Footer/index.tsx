@@ -212,6 +212,24 @@ export default function Footer() {
               <li>
                 <Link
                   className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
+                  to='/'
+                  hash='our-mission'
+                >
+                  Our Mission
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
+                  to='/about-us'
+                  hash='our-clients'
+                >
+                  Our Clients
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
                   to='/about-us'
                   hash='awards'
                 >

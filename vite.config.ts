@@ -11,11 +11,12 @@ const root = path.resolve(__dirname, './src')
 export default defineConfig({
   plugins: [react(), TanStackRouterVite()],
   resolve: {
-    alias:
-    {
+    alias: {
       "@components": resolve(root, 'components'),
       "@images": resolve(root, 'assets/images')
     },
-
+  },
+  build: {
+    outDir: 'dist',
   },
 })
