@@ -17,12 +17,12 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <div className='flex w-1/2 flex-col space-y-6 md:flex-row md:justify-between md:space-y-0'>
+        <div className='grid w-full grid-cols-2 gap-6 md:flex md:w-1/2 md:flex-row md:justify-between md:space-y-0'>
           <div>
             <h3 className='font-lato mb-4 text-[16px] font-semibold leading-[30px]'>
               Services
             </h3>
-            <ul className='text-[14px] leading-[32px] text-[#DADADA]'>
+            <ul className='text-[13px] leading-[32px] text-[#DADADA] lg:text-[14px]'>
               <li>
                 <Link
                   className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
@@ -93,7 +93,7 @@ export default function Footer() {
             <h3 className='font-lato mb-4 text-[16px] font-semibold leading-[30px]'>
               Solutions
             </h3>
-            <ul className='text-[14px] leading-[32px] text-[#DADADA]'>
+            <ul className='text-[13px] leading-[32px] text-[#DADADA]'>
               <li>
                 <Link
                   className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'
@@ -172,7 +172,7 @@ export default function Footer() {
             <h3 className='font-lato leading[30px] mb-4 text-[16px] font-semibold'>
               Company
             </h3>
-            <ul className='text-[14px] leading-[32px] text-[#DADADA]'>
+            <ul className='text-[13px] leading-[32px] text-[#DADADA]'>
               <li>
                 <Link
                   className='relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[#0C74BC] after:transition-all after:duration-300 after:ease-in-out after:content-[""] hover:after:scale-x-100'

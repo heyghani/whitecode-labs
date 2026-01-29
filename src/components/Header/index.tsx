@@ -158,7 +158,7 @@ function Header() {
               Solutions
             </NavLink>
             <hr className='border-b-2' />
-            <NavLink href='/outcomes' onClick={closeHeader}>
+            <NavLink href='/business-outcomes' onClick={closeHeader}>
               Outcomes
             </NavLink>
             <hr className='border-b-2' />

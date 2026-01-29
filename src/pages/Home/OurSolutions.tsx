@@ -12,16 +12,13 @@ const OurSolutions = () => {
       btnLink='/solutions'
       text={
         <>
-          <p className='mb-2'>
-            We deliver purpose-built solutions that transform your boldest
-            ambitions into reality. From intelligent automation platforms to
-            enterprise-grade applications, our proven solutions don't just solve
-            problems.
-          </p>
+          <b className='mb-4'>Built for mission-critical outcomes.</b>
           <p>
-            With White Code Labs, you are not just investing in technology. You
-            are investing in certainty. Every solution we build is designed to
-            become the foundation of your lasting competitive edge.
+            White Code Labs delivers purpose-built enterprise solutions that
+            address real operational challenges across cloud, data, automation,
+            and core platforms—engineered to integrate cleanly, scale reliably,
+            and serve as durable foundations that reduce risk, accelerate
+            execution, and create lasting competitive advantage.
           </p>
         </>
       }

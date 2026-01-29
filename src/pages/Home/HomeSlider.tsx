@@ -58,7 +58,7 @@ const bannerData = [
   },
   {
     backgroundImage: banner5,
-    backgroundImageSmall: banner4small,
+    backgroundImageSmall: banner5,
     textColor: 'black',
     content:
       'White Code Labs was recognized by American Business Vanguard as a leading software company in enterprise automation.',

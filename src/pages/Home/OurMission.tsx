@@ -11,19 +11,17 @@ const OurMission = () => {
       heading={'Our Mission'}
       text={
         <>
-          <p className='mb-2'>
-            Our mission is to help enterprises move faster and operate more
-            efficiently without compromising security, governance, or long-term
-            operability.
-          </p>
+          <b className='mb-4'>
+            Help enterprises move faster—without breaking what matters.
+          </b>
 
           <p>
-            We engineer enterprise-grade systems — custom and productized —
-            designed to remain reliable, performant, and compliant under
-            real-world enterprise conditions.
+            Our mission is to help enterprises accelerate execution while
+            maintaining security, governance, and long-term operability. We
+            engineer enterprise-grade systems—custom and productized—built to
+            perform reliably at scale, withstand real-world constraints, and
+            remain compliant as organizations grow and evolve.
           </p>
-          <br />
-          <br />
         </>
       }
     />

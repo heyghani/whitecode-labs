@@ -11,16 +11,15 @@ const BusinessOutcomes = () => {
       rtl
       text={
         <>
-          <p className='mb-2'>
-            We help enterprises move faster and operate more efficiently without
-            sacrificing governance or reliability. Our engagements focus on
-            improving delivery velocity, optimizing cloud and infrastructure
-            spend, and increasing system availability across mission-critical
-            platforms.
-          </p>
+          <b className='mb-4'>
+            Accountability for measurable enterprise impact.
+          </b>
           <p>
-            The result is technology that supports business growth, reduces
-            operational risk, and delivers sustained value over time
+            White Code Labs delivers measurable business outcomes by improving
+            delivery velocity, optimizing cloud and infrastructure spend, and
+            increasing the reliability of mission-critical systems—so technology
+            directly reduces risk, supports growth, and compounds value over
+            time.
           </p>
         </>
       }

@@ -81,7 +81,7 @@ export const GetInTouch = () => {
         >
           {status === 'success' && (
             <div className='col-span-1 rounded bg-green-100 p-3 text-green-700 md:col-span-2'>
-              ✓ Form submitted successfully!
+              ✓ We’ve received your submission and will get back to you shortly.
             </div>
           )}
           {status === 'error' && (
