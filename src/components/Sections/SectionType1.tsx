@@ -29,7 +29,7 @@ export const SectionType1 = ({
   return (
     <SectionOuter
       className={twMerge(
-        `relative md:bg-[url(${bg})] bg-[url(${bgSmall})] mt-6 flex min-h-[320px] items-center bg-cover bg-[30%] bg-no-repeat md:mt-10 md:min-h-[400px] md:bg-center`,
+        `relative md:bg-[url(${bg})] bg-[url(${bgSmall})] mt-10 flex h-80 items-center bg-cover bg-[30%] bg-no-repeat md:mt-10 md:bg-center`,
         bannerClassname
       )}
     >

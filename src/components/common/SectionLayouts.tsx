@@ -12,7 +12,7 @@ export const SectionOuter: React.FC<SectionOuterProps> = ({
 }) => (
   <div
     className={twMerge(
-      'page max-w-screen flex w-full flex-col items-center justify-center bg-[#F7F3F3] py-8 md:py-14',
+      'page max-w-screen flex w-full flex-col items-center justify-center bg-[#F7F3F3] py-6 sm:py-8 md:py-14 min-h-[calc(100svh-64px)]',
       className
     )}
   >
@@ -31,7 +31,7 @@ export const SectionInner: React.FC<SectionInnerProps> = ({
 }) => (
   <div
     className={twMerge(
-      'mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 sm:px-6 md:gap-8 md:px-8',
+      'mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 sm:px-6 md:gap-8 md:px-8 pt-4 md:pt-0',
       className
     )}
   >

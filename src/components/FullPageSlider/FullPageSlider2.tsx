@@ -112,7 +112,7 @@ export const FullPageSlider: React.FC<Props> = ({ sections }) => {
           mousewheel={true}
           keyboard={true}
           modules={[Pagination, Mousewheel, Keyboard, HashNavigation]}
-          className='h-[100dvh]'
+          className='h-[100svh]'
           direction='vertical'
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           speed={800}
@@ -135,7 +135,7 @@ export const FullPageSlider: React.FC<Props> = ({ sections }) => {
               id={id}
               key={id}
               data-hash={id}
-              className='flex h-full items-center justify-center md:h-screen'
+              className='flex h-full items-center justify-center'
             >
               <Component />
             </SwiperSlide>
