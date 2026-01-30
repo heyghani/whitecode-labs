@@ -11,7 +11,7 @@ const WhyCodeLab = () => {
       rtl
       text={
         <>
-          <b className='mb-4'>
+          <b className='lg:mb-4'>
             Because mission-critical systems demand stronger foundations.
           </b>
           <p>

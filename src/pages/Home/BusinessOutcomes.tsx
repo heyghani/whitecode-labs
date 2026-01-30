@@ -11,7 +11,7 @@ const BusinessOutcomes = () => {
       rtl
       text={
         <>
-          <b className='mb-4'>
+          <b className='lg:mb-4'>
             Accountability for measurable enterprise impact.
           </b>
           <p>

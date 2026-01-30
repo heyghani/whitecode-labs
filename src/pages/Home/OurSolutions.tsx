@@ -12,7 +12,7 @@ const OurSolutions = () => {
       btnLink='/solutions'
       text={
         <>
-          <b className='mb-4'>Built for mission-critical outcomes.</b>
+          <b className='lg:mb-4'>Built for mission-critical outcomes.</b>
           <p>
             White Code Labs delivers purpose-built enterprise solutions that
             address real operational challenges across cloud, data, automation,

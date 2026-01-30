@@ -11,7 +11,7 @@ const OurMission = () => {
       heading={'Our Mission'}
       text={
         <>
-          <b className='mb-4'>
+          <b className='lg:mb-4'>
             Help enterprises move faster—without breaking what matters.
           </b>
 

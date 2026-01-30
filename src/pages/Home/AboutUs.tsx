@@ -12,7 +12,7 @@ const OurMission = () => {
       btnLink='/about-us'
       text={
         <>
-          <b className='mb-4'>
+          <b className='lg:mb-4'>
             An enterprise technology partner for mission-critical systems.
           </b>
           <p>
