@@ -10,7 +10,7 @@ type Props = {
 
 const btnClasses = {
   common:
-    'shadow font-lato text-[14px] leading-[16.8px] font-bold inline-flex items-center px-4 py-2 rounded-full',
+    'shadow font-lato text-[12px] sm:text-[13px] md:text-[14px] leading-[14px] sm:leading-[15.6px] md:leading-[16.8px] font-bold inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-full',
   primary: ' bg-[#0C74BC] hover:bg-[#174C72] text-[#fff] ',
   outline:
     ' border border-[#A9A9A9] bg-white hover:bg-[#0C74BC] hover:text-white ',

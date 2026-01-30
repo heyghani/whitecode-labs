@@ -29,15 +29,15 @@ export const SectionType1 = ({
   return (
     <SectionOuter
       className={twMerge(
-        `relative md:bg-[url(${bg})] bg-[url(${bgSmall})]  mt-10  flex h-80 items-center bg-cover bg-[30%] bg-no-repeat md:bg-center`,
+        `relative md:bg-[url(${bg})] bg-[url(${bgSmall})] mt-6 flex min-h-[320px] items-center bg-cover bg-[30%] bg-no-repeat md:mt-10 md:min-h-[400px] md:bg-center`,
         bannerClassname
       )}
     >
       <SectionInner className='w-full xl:px-0'>
-        <div className='relative -top-16 flex w-full max-w-full flex-col gap-2 md:top-0 md:w-[766px]'>
+        <div className='relative flex w-full max-w-full flex-col gap-2 md:top-0 md:w-[766px] md:gap-3'>
           <h2
             className={twMerge(
-              'font-lato text-left text-[24px] font-bold leading-[34px] tracking-[-0.2px] md:mr-auto md:max-w-[65%] ',
+              'font-lato text-left text-[18px] font-bold leading-[26px] tracking-[-0.2px] md:mr-auto md:max-w-[65%] md:text-[24px] md:leading-[34px]',
               classNames?.heading
             )}
           >
@@ -45,7 +45,7 @@ export const SectionType1 = ({
           </h2>
           <div
             className={twMerge(
-              'flex w-[72%] flex-col gap-4 text-[15px] font-normal leading-[21px] text-[#666666] md:w-[75%] ',
+              'flex w-[90%] flex-col gap-3 text-[13px] font-normal leading-[18px] text-[#666666] md:w-[75%] md:gap-4 md:text-[15px] md:leading-[21px]',
               classNames?.text
             )}
           >
