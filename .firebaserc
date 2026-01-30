@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "whitecodelabs-2026"
-  }
+    "default": "whitecodelabs-2026",
+    "production": "whitecodelabs-d0fc5"
+  },
+  "targets": {},
+  "etags": {}
 }

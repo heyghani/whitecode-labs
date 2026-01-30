@@ -12,18 +12,16 @@ const OurMission = () => {
       btnLink='/about-us'
       text={
         <>
+          <b className='lg:mb-4'>
+            An enterprise technology partner for mission-critical systems.
+          </b>
           <p>
-            White Code Labs is an enterprise technology partner for
-            organizations where reliability, security, and governance are
-            non-negotiable. We design and modernize mission-critical systems
-            that deliver measurable business impact — without introducing
+            White Code Labs partners with organizations where reliability,
+            security, and governance are non-negotiable. We design and operate
+            secure, scalable platforms that support compliance, high
+            availability, and long-term enterprise operations—without adding
             operational risk.
           </p>
-          <p>
-            We architect secure, scalable platforms built for regulatory
-            compliance, high availability, and long-term enterprise operations.
-          </p>
-          <br />
         </>
       }
     />

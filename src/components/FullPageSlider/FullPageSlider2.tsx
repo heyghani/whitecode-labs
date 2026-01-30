@@ -104,7 +104,7 @@ export const FullPageSlider: React.FC<Props> = ({ sections }) => {
 
   return (
     <>
-      <div className='hidden lg:block'>
+      <div className='block'>
         <Swiper
           ref={swiperRef}
           slidesPerView={1}
@@ -144,7 +144,7 @@ export const FullPageSlider: React.FC<Props> = ({ sections }) => {
         </Swiper>
       </div>
 
-      <div className='lg:hidden'>
+      <div className='hidden'>
         {sections?.map(({ id, Component }) => (
           <div id={id} key={id} className='flex items-center justify-center'>
             <Component />
@@ -162,7 +162,7 @@ const PaginationDots: React.FC<{ count: number; activeIndex: number }> = ({
   const swiper = useSwiper()
 
   return (
-    <div className='fixed right-10 top-1/2 z-10 hidden h-fit w-fit -translate-y-1/2 flex-col items-center justify-center gap-1 lg:flex'>
+    <div className='fixed right-2 top-1/2 z-10 block h-fit w-fit -translate-y-1/2 flex-col items-center justify-center gap-1 lg:right-10 lg:flex'>
       {Array.from({ length: count })?.map((_, i) => (
         <button
           key={i}

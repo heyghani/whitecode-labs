@@ -39,7 +39,7 @@ export const SectionType2 = ({
             rtl ? 'flex-row-reverse ' : '   '
           )}
         >
-          <div className='flex flex-col justify-center gap-6 px-2 text-base leading-[22px] text-[#666666] sm:flex-1'>
+          <div className='flex flex-col justify-start gap-6 px-2 text-base leading-[22px] text-[#666666] sm:flex-1 lg:mt-[90px]'>
             {text}
             {btnLink ? (
               <div className='mt-4 flex w-full justify-center md:justify-start'>

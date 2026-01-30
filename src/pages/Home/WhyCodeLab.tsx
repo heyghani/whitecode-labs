@@ -11,15 +11,15 @@ const WhyCodeLab = () => {
       rtl
       text={
         <>
-          <p className='mb-2'>
-            White Code Labs partners with enterprises to build and operate
-            mission-critical systems where failure is not an option. We believe
-            most enterprise outages, cost overruns, and delivery delays are not
-            caused by technology limitations, but by weak architecture,
-            fragmented ownership, and governance gaps introduced early in the
-            system lifecycle.
+          <b className='lg:mb-4'>
+            Because mission-critical systems demand stronger foundations.
+          </b>
+          <p>
+            White Code Labs partners with enterprises where failure is not an
+            option, fixing foundational issues in architecture, ownership, and
+            governance so systems scale reliably, operate predictably, and
+            deliver lasting value long after launch.
           </p>
-          <p>We exist to correct those failures at the foundation.</p>
         </>
       }
     />
