@@ -13,13 +13,13 @@ export const HeroBanner = ({
   return (
     <div
       className={twMerge(
-        `bg-[url(${backgroundImage})] bg-center bg-cover bg-no-repeat h-full flex items-center`,
+        `bg-[url(${backgroundImage})] flex h-full items-center bg-cover bg-center bg-no-repeat`,
         classNames?.container
       )}
     >
       <div
         className={twMerge(
-          'max-w-6xl mx-auto h-96 flex flex-col justify-center items-center px-6 text-center space-y-8 md:space-y-4',
+          'mx-auto flex min-h-[300px] max-w-6xl flex-col items-center justify-center space-y-4 px-4 text-center sm:h-80 sm:space-y-6 sm:px-6 md:space-y-4',
           classNames?.innerContainer
         )}
       >

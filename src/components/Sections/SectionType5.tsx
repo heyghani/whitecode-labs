@@ -21,19 +21,19 @@ export const SectionType5 = ({
   classNames,
 }: Props) => {
   return (
-    <SectionInner className='h-full max-h-full overflow-hidden px-0'>
+    <SectionInner className='h-full max-h-full overflow-hidden px-4 sm:px-6 md:px-0'>
       <div
         className={twMerge(
-          ' flex h-full max-h-full flex-wrap-reverse items-stretch justify-center gap-6 md:gap-8',
+          'flex h-full max-h-full flex-wrap-reverse items-stretch justify-center gap-4 sm:gap-6 md:gap-8',
           rtl ? 'flex-row-reverse ' : '   ',
           classNames?.container
         )}
       >
         <div className='sm:flex-1 md:pt-16'>
-          <h5 className='font-lato mb-2 font-bold md:text-[14.5px] md:leading-[20px]'>
+          <h5 className='font-lato mb-2 text-[16px] font-bold leading-[20px] sm:text-[17px] md:text-[18px] md:leading-[24px]'>
             {heading}
           </h5>
-          <div className='flex flex-col justify-center gap-6 text-[15px] leading-[22px] text-[#666666]'>
+          <div className='flex flex-col justify-center gap-3 text-[13px] leading-[18px] text-[#666666] sm:gap-4 sm:text-[14px] sm:leading-[20px] md:gap-6 md:text-[15px] md:leading-[22px]'>
             {text}
           </div>
         </div>

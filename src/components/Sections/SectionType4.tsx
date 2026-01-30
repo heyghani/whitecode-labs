@@ -23,7 +23,7 @@ export const SectionType4 = ({ heading, classNames, cards }: Props) => {
       <SectionInner>
         <SectionHeader>{heading}</SectionHeader>
 
-        <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3  '>
+        <div className='grid w-full grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3'>
           {cards.map((card, i) => (
             <Card key={i} {...card} classNames={classNames?.cards} />
           ))}

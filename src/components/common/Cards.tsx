@@ -34,17 +34,24 @@ export const Card: React.FC<CardProps> = ({
       </div>
     ) : null}
 
-    <div className={'h-fit p-4 pb-6 [&>*]:text-[15px]'}>
+    <div
+      className={
+        'h-fit p-3 pb-4 sm:p-4 sm:pb-6 [&>*]:text-[13px] sm:[&>*]:text-[14px] md:[&>*]:text-[15px]'
+      }
+    >
       <h5
         className={twMerge(
-          'font-lato mb-2 font-bold  leading-[26px] text-[#313131]',
+          'font-lato mb-2 font-bold leading-[20px] text-[#313131] sm:leading-[22px] md:leading-[26px]',
           classNames?.title
         )}
       >
         {title}
       </h5>
       <p
-        className={twMerge('leading-[22px] text-[#666666] ', classNames?.text)}
+        className={twMerge(
+          'leading-[18px] text-[#666666] sm:leading-[20px] md:leading-[22px]',
+          classNames?.text
+        )}
       >
         {text}
       </p>
